@@ -4,7 +4,6 @@
 
 This document describes the standard development, review, merge, and release workflow followed by the team using GitHub Pull Requests (PRs).
 
----
 
 # Development Workflow
 
@@ -16,7 +15,7 @@ Before implementation begins:
 * The architecture, implementation approach, and code design are reviewed and agreed upon.
 * Once approved, development work starts.
 
----
+
 
 ## 2. Development & Pull Request Creation
 
@@ -25,7 +24,6 @@ After completing the implementation:
 * The developer commits the changes to their feature branch.
 * A Pull Request (PR) is created in GitHub targeting the `development` branch.
 
----
 
 ## 3. Code Review Process
 
@@ -51,7 +49,6 @@ The Pull Request is reviewed by the Development Team Lead.
 
 * Once all review comments are resolved and the code meets quality standards, the PR is approved.
 
----
 
 ## 4. Automated GitHub Checks
 
@@ -66,18 +63,11 @@ These checks verify:
 
 The PR can only proceed if all required checks pass successfully.
 
----
 
 ## 5. Merge to Development Environment
 
-After approval and successful checks:
+After approval and successful checks, the Pull Request is merged into the `development` branch.
 
-* The Pull Request is merged into the `development` branch.
-* The latest changes are automatically deployed/published to the QA environments for testing and validation.
-
----
-
-# Release Workflow
 
 ## 6. Release Preparation
 
@@ -87,31 +77,18 @@ When it is time for a production release:
 
   * `development` → `main`
 
----
 
 ## 7. Release Approval Process
 
-The release PR requires:
-
-* Approval from **two approvers**
-* Verification that:
-
-  * QA testing is completed
-  * Release scope is validated
-  * No blocking issues remain
+The release PR requires approval from **two approvers**.
 
 Only after receiving the required approvals can the PR be merged into the `main` branch.
 
----
 
 ## 8. Production Release
 
-After the release PR is merged into `main`:
+After the release PR is merged into `main` a new production release is published.
 
-* A new production release is published.
-* The production environment is updated with the approved release version.
-
----
 
 # Summary Flow
 
