@@ -1,4 +1,4 @@
-#GitHub Merge & Release Process
+# GitHub Merge & Release Process
 
 ## Overview
 
